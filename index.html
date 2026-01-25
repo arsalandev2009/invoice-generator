@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="header">
+      <a href="https://www.almadnitrader.com/">
+        <img src="./asstes/logo.png" alt="" />
+      </a>
+    </div>
+
+    <div class="body">
+      <div class="container">
+        <h2>Invoice generator</h2>
+        <br />
+        <label>Weight in kg</label>
+        <input
+          type="number"
+          id="weight1"
+          placeholder="Product 1 weight in kg"
+        />
+        <input
+          type="number"
+          id="weight2"
+          placeholder="Product 2 weight in kg"
+        />
+        <input
+          type="number"
+          id="weight3"
+          placeholder="Product 3 weight in kg"
+        />
+        <input
+          type="number"
+          id="weight4"
+          placeholder="Product 4 weight in kg"
+        />
+        <input
+          type="number"
+          id="weight5"
+          placeholder="Product 5 weight in kg"
+        />
+        <br />
+        <label>Product Name</label>
+
+        <input type="text" id="product1" placeholder="Product 1 name" />
+        <input type="text" id="product2" placeholder="Product 2 name" />
+        <input type="text" id="product3" placeholder="Product 3 name" />
+        <input type="text" id="product4" placeholder="Product 4 name" />
+        <input type="text" id="product5" placeholder="Product 5 name" />
+        <br />
+        <label>Price per kg</label>
+
+        <input type="number" id="price1" placeholder="Product 1 price / kg" />
+        <input type="number" id="price2" placeholder="Product 2 price / kg" />
+        <input type="number" id="price3" placeholder="Product 3 price / kg" />
+        <input type="number" id="price4" placeholder="Product 4 price / kg" />
+        <input type="number" id="price5" placeholder="Product 5 price / kg" />
+        <br />
+
+        <input type="number" id="advance" placeholder="Advance paid" />
+        <br />
+        <button onclick="invoice()">Generate</button>
+      </div>
+
+      <div class="result">
+        <img
+          class="copy-button"
+          src="./asstes/copy-removebg-preview.png"
+          onclick="copy()"
+          width="50px"
+        />
+        <div id="invoiceOutput">Invoice</div>
+        <br />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
